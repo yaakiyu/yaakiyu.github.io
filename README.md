@@ -1,2 +1,0 @@
-# yaakiyu.github.io
-yaakiyuのウェブサイト
