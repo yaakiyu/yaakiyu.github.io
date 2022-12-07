@@ -49,11 +49,23 @@ function fromDecimal(a, b = 7) {
  * @param {number=} c - 整数で 2 以上 16 以下
  * @returns {string} 整数
  */
-function convertNumerals(a, b = 16, c = 7) {
+function convertNumerals(a = 'A4A2A4F3A4B7A4F3A4F2A4B7A4C6A4AFA4C0A4B5A4A4', b = 16, c = 7) {
+    let before = document.getElementById("before");
+    if (before.value) {
+        a = before.value;
+    }
     a = toDecimal(a, b);
     a = fromDecimal(a, c);
-    document.write(a);
+    let after = document.getElementById("after");
+    after.innerText = "結果：" + a;
 }
 
 </script>
-<body><input type="button" value="click!" onclick="convertNumerals('A4A2A4F3A4B7A4F3A4F2A4B7A4C6A4AFA4C0A4B5A4A4');"></body>
+<body>
+    <h1>すべあな教育暗号テスター</h1>
+    <p>下のボックスに16進数の文字を入れると、</p>
+    <input type="text" value="変換したい内容を入力" id="before">
+    <input type="button" value="click!" onclick="convertNumerals();">
+    <p>実際：232151400554512566345451410432344022465620511441445560323203003</p>
+    <p id="after">結果：</p>
+</body>
