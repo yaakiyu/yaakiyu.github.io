@@ -1,4 +1,4 @@
-const url = "data/quiz/a.json";	// 読み込むJSONファイル
+const url = "js/data/quiz/a.json";	// 読み込むJSONファイル
 
 // 12星座情報を整形して表示する
 function formatJSON(json){
