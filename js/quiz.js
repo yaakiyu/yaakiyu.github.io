@@ -7,7 +7,7 @@ function formatJSON(json){
 	// JSONファイルを整形して表示
 	let html = "";
 	for(let zodiac of json){
-		html += "<p>" + zodiac.ja + "/" + zodiac.latin + "</p>";
+		html += "<p>" + zodiac.question + "/" + zodiac.answer + "</p>";
 	}
 	document.getElementById("result").innerHTML = html;
 }
