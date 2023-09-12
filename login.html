@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yaakiyu.web - Homepage</title>
+        <link href="css/common_styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <input type="password" id="mypassword" /><input type="submit" value="ログイン" onclick="loginButtonClicked()"/>
+        <p id="msg"></p>
+
+        <script>
+            let msg = document.getElementById('msg');
+            function loginButtonClicked() {
+                let password = document.getElementById('mypassword');
+                if (password.value == 'aaa'){
+                    msg.inner_text = 'ログイン成功';
+                } else {
+                    msg.inner_text = 'ログイン失敗';
+                }
+            }
+        </script>
+    </body>
+</html>
