@@ -2,23 +2,16 @@
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
 import '../styles/global.css'; // グローバルCSSの適用
-
+import '../styles/mainpage.css'; // グローバルCSSの適用
+import Navigation from '../components/navigation.astro';
+import Header from '../components/header.astro';
 ---
 <!-- Below is your "component template." It's just HTML, but with
     some magic sprinkled in to help you build great templates. -->
 <html>
-    <head>
-        <title>Yaakiyu.web - Homepage</title>
-        <link href="css/mainpage.css" rel="stylesheet" />
-        <meta charset="UTF-8" />
-        <meta name="author" content="yaakiyu" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="description" content="yaakiyuのページ。私が作っているいくつかのサービスを見ることができます。">
-        <meta name="keywords" content="yaakiyu,discord,RT,bot,wiki,プログラミング,programming">
-        <meta name="generator" content={Astro.generator} >
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    </head>
+    <Header />
     <body>
+        <Navigation />
         <p>どうも、yaakiyuです。どこにでもいる高校生プログラマー。基本的にPythonをやっています。discordでbotも作ってるのでぜひ使ってみてください。</p>
         <h1>自分がやっているSNSなど諸々</h1>
         <ul>
