@@ -2,14 +2,14 @@
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
 import '../styles/global.css'; // グローバルCSSの適用
-import '../styles/mainpage.css'; // グローバルCSSの適用
+import '../styles/mainpage.css'; // メインページCSSの適用
 import Navigation from '../components/navigation.astro';
 import Header from '../components/header.astro';
 ---
 <!-- Below is your "component template." It's just HTML, but with
     some magic sprinkled in to help you build great templates. -->
 <html>
-    <Header />
+    <Header pagename="Home"/>
     <body>
         <Navigation />
         <p>どうも、yaakiyuです。どこにでもいる高校生プログラマー。基本的にPythonをやっています。discordでbotも作ってるのでぜひ使ってみてください。</p>
